@@ -2,23 +2,50 @@
 
 This project is a microservices-based backend built using Java and Spring Boot. It supports product management, order processing, inventory tracking, and notifications. The services communicate via Kafka, are secured with Keycloak, and monitored using OpenTelemetry and Grafana.
 
----
 
 ## 🚀 Technologies Used
 
-| Technology         | Description                                                |
-|--------------------|------------------------------------------------------------|
-| ![Java](https://img.shields.io/badge/Java-ED8B00?logo=openjdk&logoColor=white) | Programming language for all services      |
-| ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?logo=springboot&logoColor=white) | Framework for building microservices       |
-| ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white) | Containerization of all services           |
-| ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?logo=kubernetes&logoColor=white) | Orchestration of Docker containers         |
-| ![Keycloak](https://img.shields.io/badge/Keycloak-0078D7?logo=keycloak&logoColor=white) | Authentication and authorization           |
-| ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white) | NoSQL database for Product service         |
-| ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&logoColor=white) | SQL database for Order and Inventory       |
-| ![Kafka](https://img.shields.io/badge/Apache%20Kafka-231F20?logo=apachekafka&logoColor=white) | Event-driven communication between services|
-| ![Eureka](https://img.shields.io/badge/Eureka-FFCA28?logo=spring&logoColor=black) | Service discovery and registry            |
-| ![OpenTelemetry](https://img.shields.io/badge/OpenTelemetry-59666C?logo=opentelemetry&logoColor=white) | Distributed tracing and monitoring        |
-| ![Grafana](https://img.shields.io/badge/Grafana-F46800?logo=grafana&logoColor=white) | Visualizing telemetry data                |
+<div align="center">
+  
+### **Services**
+<img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?logo=springboot&logoColor=white" height="50"> &nbsp;
+<img src="https://img.shields.io/badge/Spring%20Web-6DB33F?logo=spring&logoColor=white" height="50">
+
+
+### **Containerization & Orchestration**
+<img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white" height="50"> &nbsp;
+<img src="https://img.shields.io/badge/Kubernetes-326CE5?logo=kubernetes&logoColor=white" height="50">
+
+
+### **Authentication & Messaging**
+<img src="https://img.shields.io/badge/Keycloak-0078D7?logo=keycloak&logoColor=white" height="50"> &nbsp;
+<img src="https://img.shields.io/badge/Apache%20Kafka-231F20?logo=apachekafka&logoColor=white" height="50">
+
+
+### **Databases**
+<img src="https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white" height="50"> &nbsp;
+<img src="https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&logoColor=white" height="50">
+
+
+### **Service Discovery**
+<img src="https://img.shields.io/badge/Eureka-FFCA28?logo=spring&logoColor=black" height="50">
+
+
+### **Monitoring & Telemetry**
+<img src="https://img.shields.io/badge/OpenTelemetry-59666C?logo=opentelemetry&logoColor=white" height="50"> &nbsp;
+<img src="https://img.shields.io/badge/Grafana-F46800?logo=grafana&logoColor=white" height="50">
+
+</div>
+
+---
+
+**💡 Key Highlights:**  
+- **Spring Boot & Spring Web:** Core frameworks for building robust microservices.  
+- **Kafka & Keycloak:** Asynchronous messaging and secure user authentication.  
+- **MongoDB & PostgreSQL:** Efficient data storage with both NoSQL and SQL options.  
+- **Docker & Kubernetes:** Seamless deployment and scaling.  
+- **Eureka:** Service discovery for inter-service communication.  
+- **OpenTelemetry & Grafana:** Real-time monitoring and tracing.  
 
 ---
 
