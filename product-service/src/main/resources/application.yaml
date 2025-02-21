@@ -1,0 +1,22 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: product-service
+
+server:
+  error:
+    include-message: always
+    include-binding-errors: always
+  servlet:
+    context-path: /api/v1
+
+---
+# Development profile
+spring:
+  config:
+    activate:
+      on-profile: dev
+  data:
+    mongodb:
+      uri: mongodb://root:example@localhost/product-service
