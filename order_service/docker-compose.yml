@@ -1,0 +1,24 @@
+services:
+  order_service_postgres_db:
+    image: postgres:latest
+    container_name: OrderServicePostgresDB
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres123
+      - POSTGRES_DB=orderServiceDB
+    ports:
+      - "5432:5432"
+    volumes:
+      - order_service_postgres_db:/var/lib/postgresql/data
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=admin@example.com
+      - PGADMIN_DEFAULT_PASSWORD=admin
+    ports:
+      - "8432:80"
+    depends_on:
+      - order_service_postgres_db
+volumes:
+  order_service_postgres_db:
+    driver: local
