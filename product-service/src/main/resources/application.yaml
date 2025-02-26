@@ -19,4 +19,4 @@ spring:
       on-profile: dev
   data:
     mongodb:
-      uri: mongodb://root:example@localhost/product-service
+      uri: mongodb://root:example@localhost:27017/product-service?authSource=admin
