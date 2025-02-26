@@ -1,0 +1,19 @@
+meta {
+  name: Create Product
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{base}}/products
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name":"Iphone 15",
+    "description":"New gen Iphone",
+    "price":14500
+  }
+}

@@ -1,0 +1,17 @@
+meta {
+  name: All Products
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{base}}/products?paginated=true&page=0&size=10
+  body: none
+  auth: none
+}
+
+params:query {
+  paginated: true
+  page: 0
+  size: 10
+}

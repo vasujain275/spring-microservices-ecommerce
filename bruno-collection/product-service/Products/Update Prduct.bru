@@ -1,0 +1,17 @@
+meta {
+  name: Update Prduct
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{base}}/products/67bf49eb3c5ab63a5f693fcc
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "price":20000
+  }
+}
